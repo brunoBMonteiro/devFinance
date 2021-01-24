@@ -107,6 +107,12 @@ header {
     background: #49AA26;
 }
 
+#transaction {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
@@ -156,6 +162,17 @@ td.expense {
     color: #e92929;
 }
 
+/* MODAL */
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+
+    position: fixed;
+}
+
 footer {
     text-align: center;
     padding: 4rem 0 2rem;
@@ -170,5 +187,9 @@ footer {
         font-size: 87.5%;
     }
 
-    
+    #balance {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
